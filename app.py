@@ -39,6 +39,7 @@ primary_type = st.selectbox('Type of crime:', types)
 location_description = st.selectbox('Location description:', descriptions)
 domestic = st.checkbox('Domestic?')
 time = st.time_input('Time of day:', datetime.time(8, 45))
+time = time.hour * 60 + time.minute
 distance = st.number_input('Distance from the center of the city:', min_value = 0, max_value=25, value=0)
 
 if st.button('Predict Arrest'):
