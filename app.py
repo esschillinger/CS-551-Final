@@ -40,7 +40,7 @@ location_description = st.selectbox('Location description:', descriptions)
 domestic = st.checkbox('Domestic?')
 time = st.time_input('Time of day:', datetime.time(8, 45))
 time = time.hour * 60 + time.minute
-distance = st.number_input('Distance from the center of the city (in miles):', min_value = 0, max_value=25, value=0.000)
+distance = st.number_input('Distance from the center of the city (in miles):', min_value = 0.00, max_value=25.00, value=0.00)
 
 if st.button('Predict Arrest'):
     arrest = predict(primary_type=primary_type, location_description=location_description, distance=distance, time_of_day=time, domestic=domestic)
