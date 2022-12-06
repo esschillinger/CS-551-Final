@@ -31,7 +31,7 @@ def predict(primary_type, location_description, distance, time_of_day, domestic)
     return model.predict(df)
 
 
-st.title('Chicago Proper Arrest Prediction')
+st.title('Chicago Arrest Prediction')
 st.image('https://www.travelandleisure.com/thmb/wwUPgdpCUuD5sAPFLQf4YasjH0M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicago-illinois-CHITG0221-e448062fc5164da0bba639f9857987f6.jpg') # idk find one
 st.header('Enter the circumstances of the crime:')
 
